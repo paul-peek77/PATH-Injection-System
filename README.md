@@ -4,7 +4,7 @@ This project is provided for portfolio review only. No permission is granted for
 
 OVERVIEW
 
-The PATH Injection System is a simple, portable workflow for exposing applications to the command line without installing them or modifying system‑level PATH variables. It uses a folder of Windows shortcuts (.lnk files) to generate lightweight command shims (.cmd files) inside a hidden .bin directory. These shims allow portable applications to be invoked from any terminal session.
+The Windows PATH Injection System is a simple, portable workflow for exposing applications to the command line without installing them or modifying system‑level PATH variables. It uses a folder of Windows shortcuts (.lnk files) to generate lightweight command shims (.cmd files) inside a hidden .bin directory. These shims allow portable applications to be invoked from any terminal session.
 
 The system is designed for use on portable drives and constrained Windows environments where installation is not possible or not desired.
 
