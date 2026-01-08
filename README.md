@@ -41,21 +41,6 @@ KEY FEATURES
 - Automatic shim generation — .cmd wrappers are created for each shortcut
 - Safe and simple — no registry edits, no system writes, no elevated permissions
 
-PROJECT STRUCTURE
-`
-PATH-Injection-System-v1.0/
-│
-├── .bin/
-│   └── *.cmd                # Auto-generated shims (hidden directory)
-│
-├── Shortcuts/
-│   └── *.lnk                # User-provided shortcuts to portable apps
-│
-├── Update-Portables.ps1     # Main script that generates shims
-├── UPDATE.bat               # Convenience launcher for PowerShell script
-└── README.md
-`
-
 USAGE
 
 1. Place your portable applications anywhere on your drive.
