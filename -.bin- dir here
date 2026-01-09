@@ -1,1 +1,0 @@
-stripe.cmd will be produced in this directory when the script is ran with the stripe.lnk file present in the .\Shortcuts directory, as long as the shortcut is pointing to the .\Programs\Stripe\stripe.exe file.
