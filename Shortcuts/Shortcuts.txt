@@ -1,0 +1,1 @@
+Create a shortcut of every app you want in PATH and place it in the root of the Shortcuts directory.

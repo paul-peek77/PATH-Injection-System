@@ -1,0 +1,1 @@
+Each portable or stand-alone app goes into its own sub-directory within the Programs directory.
