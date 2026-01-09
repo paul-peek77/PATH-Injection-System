@@ -1,14 +1,18 @@
-# PATH Injection System v1.0
+## Windows PATH Injection System
 
-This project is provided for portfolio review only. No permission is granted for reuse, modification, or redistribution.
+#### A system designed for low-resource Windows systems that maps portable apps stored on an external HDD and adds necessary CLI functions to Windows PATH.
 
-OVERVIEW
+---
 
-The Windows PATH Injection System is a simple, portable workflow for exposing applications to the command line without installing them or modifying system‑level PATH variables. It uses a folder of Windows shortcuts (.lnk files) to generate lightweight command shims (.cmd files) inside a hidden .bin directory. These shims allow portable applications to be invoked from any terminal session.
+*This project is provided for portfolio review only. No permission is granted for reuse, modification, or redistribution.*
 
-The system is designed for use on portable drives and constrained Windows environments where installation is not possible or not desired.
+---
 
-HOW IT WORKS
+#### Overview
+
+The Windows PATH Injection System is a simple, portable workflow for exposing applications to the command line without installing them to a resource-starved system. It uses a folder of Windows shortcuts (.lnk files) to generate lightweight command shims (.cmd files) inside a hidden .bin directory. These shims allow portable applications to be invoked from any terminal session.
+
+#### How It Works
 
 The workflow is intentionally minimal and declarative:
 
@@ -22,7 +26,7 @@ The workflow is intentionally minimal and declarative:
 4. Your PATH is updated externally (e.g., via your shell profile or launcher) to include the .bin directory.
 5. Any shim inside .bin becomes a callable command.
 
-REVERSING OR UPDATING THE PATH
+#### Reversing or Updating the Path
 
 There is no special reversible mechanism. The system is declarative:
 
@@ -33,7 +37,7 @@ There is no special reversible mechanism. The system is declarative:
 The script is the source of truth.
 The PATH reflects the current state of the Shortcuts folder.
 
-KEY FEATURES
+#### Key Features
 
 - No installation required — ideal for portable drives and restricted systems
 - No permanent PATH modification — the .bin directory is the only PATH dependency
@@ -41,7 +45,7 @@ KEY FEATURES
 - Automatic shim generation — .cmd wrappers are created for each shortcut
 - Safe and simple — no registry edits, no system writes, no elevated permissions
 
-USAGE
+#### Usage
 
 1. Place your portable applications anywhere on your drive.
 2. Create .lnk shortcuts to those executables.
@@ -50,13 +54,11 @@ USAGE
 5. Ensure .bin is included in your PATH (manually or via your shell profile).
 6. Call your apps from the terminal using the shortcut names (spaces removed).
 
-PURPOSE
+#### Purpose
 
-This project demonstrates:
+This project utilizes:
 - practical scripting
 - filesystem automation
 - COM‑based shortcut parsing
 - portable workflow design
 - safe, non‑destructive environment configuration
-
-It is part of a larger portfolio showcasing systems thinking, developer tooling, and workflow engineering.
